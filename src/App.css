@@ -1,38 +1,293 @@
-.App {
-  text-align: center;
+.main {
+  background: rgb(7, 88, 88);
+  background: linear-gradient(
+    90deg,
+    rgb(7, 88, 88) 30%,
+    rgba(252, 176, 69, 1) 80%
+  );
+  padding-top: 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.section{
+  background-image: url("img/f46cf5ef24e5afdca966fcf0315c3889.png");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.banner img {
+  width: 100px;
+  color: white;
+  padding: left;
+}
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.option > Button {
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  position: relative;
+  z-index: 2;
+}
+.option > Button::after {
+  content: '';
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+.option > Button:hover::after {
+  width: 100%;
+  height: 8%;
+}
+.option > Button::before {
+  content: '';
+  background-color: white;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0px;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+.option > Button:hover::before {
+  width: 100%;
+  height: 8%;
+}
+
+
+.cart Button {
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.cart Button:hover {
+  color: rgb(246, 233, 233);
+  transition: 0.5s;
+}
+
+.cart Button::after {
+  content: '';
+  color: white;
+  background-color: black;
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  transition: all 0.5s ease;
+  width: 0px;
+  height: 0px;
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.cart Button:hover::after {
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-img {
+  width: 700px;
+  transition: 2s;
+  object-fit: unset;
+  overflow: hidden;
+}
+.card-img:hover {
+  animation: spin 3s;
+  transition: all 5s;
+  transform: rotate(33deg);
+
+  overflow: hidden;
+}
+
+@keyframes spin {
+  0% {
+    transform: scale(1, 1) rotate(0deg);
+  }
+  100% {
+    transform: scale(1.3, 1.3) rotate(32deg);
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+@keyframes slide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#bag-btn {
+  color: black;
+  background-color: white;
+  padding: 20px;
+  border-radius: 40px;
+}
+#title {
+  color: white;
+  font-size: 100px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+#price {
+  color: rgba(252, 176, 69, 1);
+  font-size: 40px;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#dollar-sign {
+  color: antiquewhite;
+  font-size: 20px;
+
+}
+
+
+#bag-btn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.modal {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: antiquewhite;
+  border-radius: 10px;
+  padding: 4;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  opacity: calc(70%);
 }
 
-.App-link {
-  color: #61dafb;
+.modal Button {
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.mobile Button {
+  color: black;
+}
+
+.scroll {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding-bottom: 100px;
+  
+}
+
+.scroll #card-1 {
+  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+  background: rgb(58, 180, 180);
+  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgba(18, 240, 221, 0.781) 100%);
+
+  width: 3000px;
+  margin: 30px;
+  min-height: 10px;
+
+}
+
+.scroll #card-2 {
+  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+  background: rgb(29, 36, 36);
+  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(212, 145, 90) 100%);
+
+  width: 3000px;
+  margin: 30px;
+  min-height: 10px;
+}
+
+
+.scroll #card-3 {
+  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+  background: rgb(29, 36, 36);
+  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(57, 63, 99) 100%);
+
+  width: 3000px;
+  margin: 30px;
+  min-height: 10px;
+}
+
+
+
+.scroll #card-4 {
+  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
+  background: rgb(29, 36, 36);
+  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(228, 144, 183) 100%);
+
+  width: 3000px;
+  margin: 30px;
+  min-height: 10px;
+}
+
+
+.scroll #list-img:hover {
+  transform: rotate(-12deg) scale(1.5, 1.5);
+  transition: 1s;
+}
+
+.scroll #list-img {
+  transition: 1s;
+}
+
+.scroll,
+Typography {
+  color: rgb(0, 0, 0);
+  text-shadow: 1px 1px #000000;
+}
+
+.scroll img {
+  width: 200px;
+}
+
+
+
+@media (max-width: 700px) {
+  .option {
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .mobile {
+    display: block;
+  }
+  .scroll {
+    flex-wrap: wrap;
+  }
+  .scroll #card {
+    margin: 20px;
+  }
+}
+@media (min-width: 701px) {
+  .mobile {
+    display: none;
   }
 }
