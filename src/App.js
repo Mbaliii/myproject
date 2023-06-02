@@ -3,8 +3,8 @@ import './App.css';
 import LocalMallIcon from '@mui/icons-material/LocalMall';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState } from 'react';
-import main from './img/sb-zoom-blazer-mid-skate-shoes-TtJD6k.png';
-import section from './img/f46cf5ef24e5afdca966fcf0315c3889.png';
+import main from './img/WhatsApp Image 2023-05-31 at 17.24.40.png';
+import Card from "./card"
 
 function App() {
   const [open, setOpen] = useState(false);
@@ -16,17 +16,27 @@ function App() {
     setOpen(false);
   };
   return (
+    <div className='container'>
     <Box className="main">
       <Box position="static" className="banner">
         <Box className="icon">
           <img src="https://freepngimg.com/thumb/nike_logo/3-2-nike-logo-png.png" />
         </Box>
 
-        <Box className="section">
-          <Box className="icon">
-            <img src="img/f46cf5ef24e5afdca966fcfc0315c3889.png" />
-          </Box>
-        </Box>
+
+      <div className='santi'>
+      <Box class="section">
+      <Box position="tactic" className="Stick">
+      <Box class="icon">
+        <img src="https://freepngimg.com/thumb/nike_logo/3-2-nike-logo-png.png"/>
+      </Box>
+      </Box>
+      </Box>
+      </div>
+
+
+
+
 
         <Box className="option">
           <Button>Men</Button>
@@ -40,6 +50,11 @@ function App() {
             <MenuIcon />
           </Button>
         </Box>
+
+
+     
+
+
 
         <Box className="cart">
           <Button>
@@ -91,17 +106,11 @@ function App() {
             />
           </Box>
           <Typography>NIKE AIR HUARHE PREMIUM </Typography>
-
           <Typography> * * * * * </Typography>          
           <Typography> $185 </Typography>
           <Typography> 3COLORS           +</Typography>
-        
-
         </Box>
         
-
-
-
 
         <Box id="card-2">
           <Box>
@@ -127,7 +136,7 @@ function App() {
           <Typography> NIKE AIR SPAN II PREMIUM</Typography>
           <Typography> *  *  *  *  *  </Typography>
           <Typography> $270 </Typography>
-          <Typography> 3COLORS </Typography>
+          <Typography> 3COLORS </Typography> 
 
 
           
@@ -147,6 +156,7 @@ function App() {
         </Box>
       </Box>
     </Box>
+    </div>
   );
 }
 

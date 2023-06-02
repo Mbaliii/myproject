@@ -1,22 +1,27 @@
-.main {
-  background: rgb(7, 88, 88);
-  background: linear-gradient(
-    90deg,
-    rgb(7, 88, 88) 30%,
-    rgba(252, 176, 69, 1) 80%
-  );
-  padding-top: 30px;
-}
 
-.section{
-  background-image: url("img/f46cf5ef24e5afdca966fcf0315c3889.png");
+.container{
+    height: 100vh!important;
+    overflow: hidden;
+  }
+
+
+
+.main{
+  background-image: url("./img/wave-haikei.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  
 }
 
 .banner img {
   width: 100px;
   color: white;
   padding: left;
+  /* good banner image makes it wide the nike logo use this  */
 }
+
+
 
 .banner {
   display: flex;
@@ -34,6 +39,8 @@
   position: relative;
   z-index: 2;
 }
+
+
 .option > Button::after {
   content: '';
   background-color: white;
@@ -43,11 +50,17 @@
   width: 0px;
   transition: all 0.5s ease;
   z-index: -1;
+
 }
+
+
 .option > Button:hover::after {
   width: 100%;
   height: 8%;
 }
+
+
+
 .option > Button::before {
   content: '';
   background-color: white;
@@ -59,10 +72,6 @@
   z-index: -1;
 }
 
-.option > Button:hover::before {
-  width: 100%;
-  height: 8%;
-}
 
 
 .cart Button {
@@ -74,10 +83,13 @@
   z-index: 1;
 }
 
+
 .cart Button:hover {
   color: rgb(246, 233, 233);
   transition: 0.5s;
 }
+
+
 
 .cart Button::after {
   content: '';
@@ -93,12 +105,15 @@
   z-index: -1;
 }
 
+
 .cart Button:hover::after {
   width: 100%;
   height: 100%;
   top: 0px;
   left: 0px;
 }
+
+
 
 .card {
   display: flex;
@@ -108,17 +123,16 @@
   flex-wrap: wrap;
 }
 
+
+
 .card-img {
-  width: 700px;
-  transition: 2s;
-  object-fit: unset;
+  width: 600px;
+  object-fit:scale-down;
   overflow: hidden;
 }
-.card-img:hover {
-  animation: spin 3s;
-  transition: all 5s;
-  transform: rotate(33deg);
 
+
+.card-img:hover {
   overflow: hidden;
 }
 
@@ -148,9 +162,12 @@
   padding: 20px;
   border-radius: 40px;
 }
+
+
+
 #title {
   color: white;
-  font-size: 100px;
+  font-size: 55px;
   font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -176,6 +193,8 @@
   font-weight: 600;
 }
 
+
+
 .modal {
   position: absolute;
   top: 150px;
@@ -187,7 +206,7 @@
   padding: 4;
   display: flex;
   flex-direction: column;
-  opacity: calc(70%);
+
 }
 
 .modal Button {
@@ -196,69 +215,67 @@
 
 .mobile Button {
   color: black;
+
 }
 
 .scroll {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding-bottom: 100px;
+  padding-bottom: 5px;
   
 }
 
 .scroll #card-1 {
-  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
-  background: rgb(58, 180, 180);
-  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgba(18, 240, 221, 0.781) 100%);
+  border-radius: 5px;
+  /* border-radius: 10px 10px 10px 10px; */
+  /* backgrou nd: rgb(58, 180, 180); */
+  /* background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgba(18, 240, 221, 0.781) 70%); */
 
-  width: 3000px;
-  margin: 30px;
-  min-height: 10px;
+  width: 900px;
+  margin: 20px 80px;
+  line-height: 250px;
+
 
 }
 
 .scroll #card-2 {
-  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
-  background: rgb(29, 36, 36);
-  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(212, 145, 90) 100%);
-
-  width: 3000px;
-  margin: 30px;
-  min-height: 10px;
+  border-radius: 5px;
+  /* background: rgb(11, 32, 32); */
+  width: 900px;
+  line-height: 250px;
+  margin:30px 80px;
+  line-height: 250px;
 }
 
 
 .scroll #card-3 {
-  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
-  background: rgb(29, 36, 36);
-  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(57, 63, 99) 100%);
-
-  width: 3000px;
-  margin: 30px;
-  min-height: 10px;
+  border-radius: 5px;
+  /* background: rgb(29, 36, 36); */
+  /* background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(57, 63, 99) 100%); */
+  width: 400px;
+  margin: 0px 80px;
+  line-height: 10px;
 }
 
 
 
 .scroll #card-4 {
-  border-radius: 10% 10% 10% 10% / 10% 10% 10% 10%;
-  background: rgb(29, 36, 36);
+  border-radius: 5;
+  /* background: rgb(29, 36, 36); */
   background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(228, 144, 183) 100%);
 
-  width: 3000px;
-  margin: 30px;
-  min-height: 10px;
+  width: 400px;
+  margin: 70px 80px;
+  line-height: 250px;
 }
 
 
 .scroll #list-img:hover {
-  transform: rotate(-12deg) scale(1.5, 1.5);
-  transition: 1s;
+  overflow: hidden;
+  transform: rotate(-33deg); 
 }
 
-.scroll #list-img {
-  transition: 1s;
-}
 
 .scroll,
 Typography {
