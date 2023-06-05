@@ -7,7 +7,7 @@
 
 
 .main{
-  background-image: url("./img/wave-haikei.png");
+  background-image: url("./img/wave-haikei\ \(2\).png");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -21,6 +21,14 @@
   /* good banner image makes it wide the nike logo use this  */
 }
 
+
+/* second nike image */
+/* .Stick img{
+  color:transparent;
+  width: 500px;
+  align-items: center;
+
+} */
 
 
 .banner {
@@ -263,7 +271,7 @@
 .scroll #card-4 {
   border-radius: 5;
   /* background: rgb(29, 36, 36); */
-  background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(228, 144, 183) 100%);
+  /* background: linear-gradient(360deg, rgb(219, 228, 227) 40%, rgb(228, 144, 183) 100%); */
 
   width: 400px;
   margin: 70px 80px;

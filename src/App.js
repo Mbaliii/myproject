@@ -24,7 +24,7 @@ function App() {
         </Box>
 
 
-      <div className='santi'>
+      {/* <div className='santi'>
       <Box class="section">
       <Box position="tactic" className="Stick">
       <Box class="icon">
@@ -32,10 +32,7 @@ function App() {
       </Box>
       </Box>
       </Box>
-      </div>
-
-
-
+      </div> */}
 
 
         <Box className="option">
